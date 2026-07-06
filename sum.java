@@ -1,13 +1,11 @@
-import java.util.Scanner;
 public class sum {
-    public static void main(String[] args){
-        Scanner input = new Scanner(System.in);
-        int num1 = input.nextInt();
-        int num2 = input.nextInt();
+    static void main(String[] args) {
+        int [] arr = {1,42,3,44,85};
+        int sum = 0;
 
-        int sum = num1+num2;
-
-        System.out.println("SUM OF TWO NUMBERS="+sum);
-
+        for(int num : arr){
+            sum +=num;
+        }
+        System.out.println(sum);
     }
 }
